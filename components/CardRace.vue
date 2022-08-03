@@ -23,7 +23,7 @@
       <ListRaceSessions v-if="upcoming" :race="race" />
       <p v-else class="text-sm">
         <ClientOnly>
-          {{ localDate(`${race.date} ${race.time}`) }}
+          {{ localDate(`${race.date}T${race.time}`) }}
         </ClientOnly>
       </p>
     </div>

@@ -11,10 +11,10 @@ export const localDate = date => {
 
 export const pastRace = race => {
   const today = new Date();
-  return Date.parse(`${race.date} ${race.time}`) < Date.parse(today);
+  return Date.parse(`${race.date}T${race.time}`) < Date.parse(today);
 };
 
 export const upcomingRace = race => {
   const today = new Date();
-  return Date.parse(`${race.date} ${race.time}`) >= Date.parse(today);
+  return Date.parse(`${race.date}T${race.time}`) >= Date.parse(today);
 };
