@@ -1,5 +1,5 @@
 <template>
-  <article class="bg-white shadow-xl mx-2 my-8 rounded-2xl dark:bg-gray-800 dark:text-slate-200">
+  <article class="bg-white shadow-xl mx-2 my-8 rounded-2xl dark:bg-gray-800 dark:text-gray-200">
     <div class="flex justify-between items-center p-6">
       <div class="flex">
         <CountryEmoji :country="race.Circuit.Location.country" />
@@ -21,7 +21,7 @@
     </div>
     <div class="p-6 bg-slate-100 shadow-inner dark:bg-gray-900 rounded-b-2xl">
       <ListRaceSessions v-if="upcoming" :race="race" />
-      <p v-else class="text-sm">
+      <p v-else class="text-sm text-slate-500 font-mono dark:text-gray-400">
         <ClientOnly>
           {{ localDate(`${race.date}T${race.time}`) }}
         </ClientOnly>
