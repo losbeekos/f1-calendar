@@ -1,9 +1,10 @@
 <template>
   <ul class="text-sm font-mono">
     <li v-if="race.FirstPractice" class="flex justify-between">
-      <div>First practice</div>
+      <div>1st practice</div>
       <ClientOnly>
-        <div class="text-slate-500 dark:text-gray-400">{{ localDate(`${race.FirstPractice.date}T${race.FirstPractice.time}`) }}</div>
+        <div class="text-slate-500 dark:text-gray-400">{{
+          localDate(`${race.FirstPractice.date}T${race.FirstPractice.time}`) }}</div>
         <template #fallback>
           <p>Getting local date</p>
         </template>
@@ -12,25 +13,28 @@
     <li v-if="race.Sprint && race.Qualifying" class="flex justify-between">
       <div>Qualifying</div>
       <ClientOnly>
-        <div class="text-slate-500 dark:text-gray-400">{{ localDate(`${race.Qualifying.date}T${race.Qualifying.time}`) }}</div>
+        <div class="text-slate-500 dark:text-gray-400">{{ localDate(`${race.Qualifying.date}T${race.Qualifying.time}`)
+          }}</div>
         <template #fallback>
           <p>Getting local date</p>
         </template>
       </ClientOnly>
     </li>
     <li v-if="race.SecondPractice" class="flex justify-between">
-      <div>Second practice</div>
+      <div>2nd practice</div>
       <ClientOnly>
-        <div class="text-slate-500 dark:text-gray-400">{{ localDate(`${race.SecondPractice.date}T${race.SecondPractice.time}`) }}</div>
+        <div class="text-slate-500 dark:text-gray-400">{{
+          localDate(`${race.SecondPractice.date}T${race.SecondPractice.time}`) }}</div>
         <template #fallback>
           <p>Getting local date</p>
         </template>
       </ClientOnly>
     </li>
     <li v-if="race.ThirdPractice" class="flex justify-between">
-      <div>Third practice</div>
+      <div>3rd practice</div>
       <ClientOnly>
-        <div class="text-slate-500 dark:text-gray-400">{{ localDate(`${race.ThirdPractice.date}T${race.ThirdPractice.time}`) }}</div>
+        <div class="text-slate-500 dark:text-gray-400">{{
+          localDate(`${race.ThirdPractice.date}T${race.ThirdPractice.time}`) }}</div>
         <template #fallback>
           <p>Getting local date</p>
         </template>
@@ -39,7 +43,8 @@
     <li v-if="!race.Sprint && race.Qualifying" class="flex justify-between">
       <div>Qualifying</div>
       <ClientOnly>
-        <div class="text-slate-500 dark:text-gray-400">{{ localDate(`${race.Qualifying.date}T${race.Qualifying.time}`) }}</div>
+        <div class="text-slate-500 dark:text-gray-400">{{ localDate(`${race.Qualifying.date}T${race.Qualifying.time}`)
+          }}</div>
         <template #fallback>
           <p>Getting local date</p>
         </template>

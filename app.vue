@@ -1,7 +1,7 @@
 <template>
   <div class="max-w-xl mx-auto">
     <header class="p-8">
-      <h1 class="text-3xl font-bold dark:text-white">F1 Calendar</h1>
+      <h1 class="text-3xl font-bold dark:text-white">F1 {{ new Date().getFullYear() }} Calendar</h1>
     </header>
     <main v-if="!pending">
       <section>
