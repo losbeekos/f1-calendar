@@ -1,9 +1,9 @@
 <template>
-  <div class="max-w-xl mx-auto">
-    <header class="p-8">
-      <h1 class="text-3xl font-bold dark:text-white">F1 {{ new Date().getFullYear() }} Calendar</h1>
-    </header>
+  <div class="max-w-xl mx-auto pb-20 sm:pt-10">
     <main v-if="!pending">
+      <header class="p-8">
+        <h1 class="text-3xl font-bold dark:text-white">F1 {{ racesData.MRData.RaceTable.season }} Calendar</h1>
+      </header>
       <section>
         <OverviewHeading>
           <template v-slot:default>
