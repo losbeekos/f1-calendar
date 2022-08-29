@@ -12,7 +12,6 @@ export default defineNuxtConfig({
       name: 'F1 Calendar',
       description:
         'F1 race weekend calendar with times in your local timezone.',
-      theme_color: '#ffffff',
     },
     workbox: {
       // TODO: Caching for F1 API in service worker.
